@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta >
+        <title>Mobility APP</title>
+        <link rel="icon" type="image/gif/png" href="https://drive.google.com/uc?id=11Op1UhP_qr-gm1GaDWg8mLHQKY6PwneZ">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+      <header class='hor'>
+        <div><div id="openweathermap-widget-18"></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 18,cityid: '792680',appid: '59c54241464d4715efbdff33fde905c1',units: 'metric',containerid: 'openweathermap-widget-18',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script> </div>
+        <p>Categories </p>
+        </header>
+      
+      <nav class='topnav'>
+                <ul class="topnav" id="dropdownClick">
+                <li><img src='https://cdn0.iconfinder.com/data/icons/vehicle-1/48/11-512.png' alt="Smiley face" height="42" width="42"><a href="#PublicTransport">Public Transport</a></li>
+                <li><img src="https://cdn4.iconfinder.com/data/icons/hotel-services-and-facilities-2/32/Hotel-29-512.png" alt="Smiley face" height="42" width="42"><a href="#Airport">Airport shuttle and intercity bus</a></li>
+                <li><img src="https://cdn1.iconfinder.com/data/icons/transportation-28/100/9_Bicycle-512.png" alt="Smiley face" height="42" width="42"><a href="#Bike-routes">Bike routes</a></li>
+                <li><img src="https://cdn2.iconfinder.com/data/icons/sport-ii/96/09-512.png" alt="Smiley face" height="42" width="42"><a href="#Bike-sharing">Bike sharing systems </a></li>
+                <li><img src="https://cdn1.iconfinder.com/data/icons/map-transportation-1/128/Artboard_21-512.png" alt="Smiley face" height="42" width="42"><a href="#EV-Charge">Eco charging points</a></li>
+                <li><img src="https://cdn3.iconfinder.com/data/icons/miscellaneous-16-solid/128/carsharing_ride_pooling_carpooling_car_transportation_vehicle_sharing-512.png" alt="Smiley face" height="42" width="42"><a href="#Car-sharing">Car sharing systems</a></li>
+                <li><img src="https://cdn4.iconfinder.com/data/icons/hotel-facilities-2/512/parking1-512.png" alt="Smiley face" height="42" width="42"><a href="#Parking">Parking</a></li>
+                <li><img src="https://cdn3.iconfinder.com/data/icons/capital-world-landmarks-glyphs-vol-1/150/182__Monaco__famous__landmarks__Building__travel__architecture__monument-512.png" alt="Smiley face" height="42" width="42"><a href="#Landmarks">Landmarks</a></li>
+                <li><img src="https://www.14news.com/pb/resources/images/weather/weather-condition-icons/400x400/66_daily_forecast.png" alt="Smiley face" height="42" width="42"><a href="#Weather">Weather</a></li>
+                  <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Wheelchair.svg/951px-Wheelchair.svg.png" alt="Smiley face" height="42" width="42"><a href="#Weather">Special space</a></li>
+                  </ul>
+                 <ul class="topnav hor">
+                  <li><a href="#Map">Map</a></li>
+                  <li><a href="#Near-me">Near me</a></li>
+                </ul>
+        </nav>
+
+      <section id='PublicTransport'>
+              <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        var ro = !!d.getElementById(id);
+        js = d.createElement(s); js.id = id;
+        js.src = "https://widgets.moovit.com/ws/8962FF4D5AAC5BC8E0530100007F6121/2709428";
+        fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'moovit-jsw');</script>
+
+    <div class="mv-gd-widget-20" 
+         data-width="100%" 
+         data-height="100%"
+         data-id="2709428"></div>
+        </section>
+      <section id="Parking">
+        <div id="map"></div>
+            
+       <script>
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                var uluru = {lat: 44.803084, lng: 20.483097};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 16, center: uluru});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCA0AoqEwFfq8--W1hAVLPvL-v8MCT-Ic&callback=initMap" type="text/javascript"></script>
+        </section>
+      <section id='EV-Charge'>
+        <div>
+        <iframe src="https://map.openchargemap.io/?mode=embedded" allow="geolocation" frameborder="0" width="100%" height="500px"></iframe>
+          <div>
+      </section>
+          <section>
+             </section>
+      </body>
+</html>
